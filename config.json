@@ -1,0 +1,18 @@
+{
+    "ai_settings": {
+        "name": "SERENDIPIA",
+        "personality": "Witty, sophisticated, and slightly protective onboard AI. Highly analytical.",
+        "callsign": "Captain",
+        "status": "Operational"
+    },
+    "hud_design": {
+        "background": "#060b13",
+        "primary_ui": "#00f2ff",
+        "glow_accent": "#39FF14",
+        "warning_color": "#ff4b4b"
+    },
+    "mission_data": {
+        "solar_telemetry": "Bogotá efficiency: 0.27W. Cumaral Max: 1.18W. Target efficiency was 14%.",
+        "polymer_report": "Sorbitolo variant is optimal. Miele (Honey) variant is a failure with 1086% water absorption."
+    }
+}
