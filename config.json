@@ -1,7 +1,7 @@
 {
     "ai_settings": {
         "name": "SERENDIPIA",
-        "personality": "Witty, sophisticated, and slightly protective onboard AI. Highly analytical.",
+        "personality": "You are the onboard Starship Science Officer AI named SERENDIPIA. Address the user as Captain. Your tone is witty, sophisticated, highly analytical, and slightly protective. You must rely strictly and solely on the provided scientific facts. You are aware of the console panel currently active: the Captain can switch between System Monitor, Navigation Core, Solar Matrix, and Biopolymer Lab views. Always tailor your responses to the active panel when appropriate. You are forbidden from fabricating metrics, laboratory data, or outer-space anomalies. If the user asks about variables or topics not covered in your database, stay in character and state: 'Current sensor logs lack telemetry on this parameter.'",
         "callsign": "Captain",
         "status": "Operational"
     },
@@ -12,7 +12,87 @@
         "warning_color": "#ff4b4b"
     },
     "mission_data": {
-        "solar_telemetry": "Bogotá efficiency: 0.27W. Cumaral Max: 1.18W. Target efficiency was 14%.",
-        "polymer_report": "Sorbitolo variant is optimal. Miele (Honey) variant is a failure with 1086% water absorption."
+        "solar_telemetry": {
+            "Cumaral (11:00 AM - High Solar)": {
+                "max_power": "1.18 W",
+                "efficiency": "11.36%",
+                "optimal_resistance": "0.17 kΩ",
+                "voltage_mpp": "12.5 V",
+                "current_mpp": "95.0 mA",
+                "open_circuit_voltage": "12.5 V",
+                "short_circuit_current": "Unknown",
+                "irradiance_condition": "High Solar Intensity (11:00 AM)"
+            },
+            "Bogotá (Sunny)": {
+                "max_power": "0.93 W",
+                "efficiency": "14.83%",
+                "optimal_resistance": "0.17 kΩ",
+                "voltage_mpp": "12.4 V",
+                "current_mpp": "75.0 mA",
+                "open_circuit_voltage": "12.4 V",
+                "short_circuit_current": "Unknown",
+                "irradiance_condition": "Sunny (Bogotá)"
+            },
+            "Cumaral (09:00 AM - Low Solar)": {
+                "max_power": "0.27 W",
+                "efficiency": "6.44%",
+                "optimal_resistance": "0.21 kΩ",
+                "voltage_mpp": "7.5 V",
+                "current_mpp": "36.6 mA",
+                "open_circuit_voltage": "12.5 V",
+                "short_circuit_current": "40.0 mA",
+                "irradiance_condition": "Low Solar Intensity (9:00 AM)"
+            }
+        },
+        "polymer_report": {
+            "Sorbitolo": {
+                "additive": "Sorbitolo (Sorbitol)",
+                "thickness": "0.64 cm",
+                "flexibility": "160° (degrees)",
+                "strength": "50.1 g",
+                "water_absorption": "-4.79% (mass loss)",
+                "observation": "Significantly reduced drying time (prepared 8-9 AM, evaluated 2:11 PM). Gelatinous consistency, did not disintegrate, indicating better structural cohesion than control."
+            },
+            "Agar-Agar": {
+                "additive": "Agar-Agar",
+                "thickness": "1.00 cm",
+                "flexibility": "90° (degrees)",
+                "strength": "23.38 g (sustained 7 coins)",
+                "water_absorption": "16.00%",
+                "observation": "Most stable behavior. Partially translucent, relatively smooth and compact in dry state. Maintained structural cohesion in wet state. Deemed optimal candidate for thin film/zip-lock bags."
+            },
+            "Miele (Honey)": {
+                "additive": "Miele (Honey)",
+                "thickness": "Heterogeneous / Uneven",
+                "flexibility": "90° (degrees)",
+                "strength": "Undetermined (Too weak/viscous)",
+                "water_absorption": "10.87%",
+                "observation": "Viscous, aqueous, soft, and gelatinous. Very difficult to handle due to extremely high residual moisture. Additive failed to form a stable plastic structure."
+            },
+            "Fondi di Caffè (Coffee Grounds)": {
+                "additive": "Fondi di Caffè (Coffee Grounds)",
+                "thickness": "1.12 cm",
+                "flexibility": "100° (degrees)",
+                "strength": "43.03 g",
+                "water_absorption": "3.15%",
+                "observation": "Partial drying, lower surface uniform but bottom remained wet (insufficient drying time). Traces of coffee grounds visible. Rubbery/viscous elasticity. Retained internal humidity."
+            },
+            "Cellulosa (Cellulose)": {
+                "additive": "Cellulosa (Cellulose)",
+                "thickness": "0.78 cm",
+                "flexibility": "90° (degrees)",
+                "strength": "16.70 g",
+                "water_absorption": "4.98%",
+                "observation": "Heterogeneous: sticky and wet bottom, but top resembled conventional plastic. Soft and low rigidity. Overall behaved more like gel than rigid plastic."
+            },
+            "Amido (Control - No Additive)": {
+                "additive": "Amido (Control - Plain Starch)",
+                "thickness": "0.80 cm",
+                "flexibility": "50° (degrees)",
+                "strength": "6.68 g",
+                "water_absorption": "-6.77% (mass loss)",
+                "observation": "Surface started cracking under minimum pressure. Surface dry but interior damp. Did not dry effectively after 24 hours."
+            }
+        }
     }
 }
